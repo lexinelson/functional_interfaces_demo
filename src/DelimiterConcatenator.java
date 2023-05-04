@@ -1,8 +1,8 @@
-public class DelimiterConcat implements  StringConcatenator {
+public class DelimiterConcatenator implements StringConcatenator {
 
     private String delimiter;
 
-    public DelimiterConcat(String delimiter) {
+    public DelimiterConcatenator(String delimiter) {
         this.delimiter = delimiter;
     }
 

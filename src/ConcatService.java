@@ -1,8 +1,8 @@
 public class ConcatService {
 
-    private final String[] strings;
+    private String[] strings;
 
-    private final StringConcatenator defaultConcat = (x) -> {
+    private StringConcatenator defaultConcat = (x) -> {
         StringBuilder builder = new StringBuilder();
         for (String str : x) {
             builder.append(str);
@@ -16,9 +16,9 @@ public class ConcatService {
     }
 
     public void printConcatenation(StringConcatenator concatenator) {
-        System.out.println("=========================\n");
+        System.out.println("=======================");
         System.out.println(concatenator.concatenate(strings));
-        System.out.println("\n=========================");
+        System.out.println("=======================");
     }
 
     public void printConcatenation() {

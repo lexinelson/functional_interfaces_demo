@@ -1,13 +1,13 @@
 public class Main {
 
     public static void main(String... args) {
-        ConcatService s = new ConcatService("Hello", "World", "of", "Java");
+        ConcatService service = new ConcatService("Hello", "World", "of", "Java");
 
-        DelimiterConcat d = new DelimiterConcat("~");
-        s.printConcatenation(d);
+        DelimiterConcatenator delimiter = new DelimiterConcatenator("~");
+        service.printConcatenation(delimiter);
 
-        s.printConcatenation((x) -> Integer.toString(x.length));
+        service.printConcatenation((x) -> Integer.toString(x.length));
 
-        s.printConcatenation();
+        service.printConcatenation();
     }
 }
